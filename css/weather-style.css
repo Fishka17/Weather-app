@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #37474f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 415px;
+    background-color: #232931;
+    color: aliceblue;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-card {
+    width: 250px;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    background: url('../img/1.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    transform: scale(1.03) perspective(200px);
+    box-shadow: -5px 6px 19px 3px rgba(15,  41,  87, 0.38);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.left-card:hover {
+    transform: scale(1.1) perspective(2500px)rotateY(5deg);
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #5c6bc0 10%, #0d47a1 100%);
+    opacity: 0.3;
+    border-radius: 25px;
+}
+
+.description-day {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.15rem;
+    padding-top: 15px;
+}
+
+.description-weather-today {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2rem;
+}
+
+.description-weather-today .bx {
+    font-size: 4.5rem;
+}
+
+.description-weather-today .degrees {
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+
+.description-weather-today .day {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.right-card {
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding-top: 25px;
+    width: 400px;
+}
+
+.data-air {
+    padding: 25px 35px;
+}
+
+.data-air-elem {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.data-air div .data-name {
+    font-weight: 700;
+}
+
+.weather-list {
+    list-style: none;
+    margin: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+
+.list-elem {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.list-elem .bx {
+    font-size: 2rem;
+    margin-bottom: 3px;
+}
+
+.list-elem div:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.list-elem:hover {
+    transform: scale(1.1);
+    background: #fff;
+    color: #222831;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border: none;
+    font-weight: 700;
+    background: #07a4e2;
+    height: 70px;
+    padding-left: 26%;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+.location:hover {
+    background: #027fb1;
+}

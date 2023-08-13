@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/weather-style.css"> <title>Weathr-app</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left-card">
+
+            <div class="gradient"></div>
+
+            <div class="description-day">
+                <h2 id="day">Friday</h2>
+                <p class="data-day">28 July 2023</p>
+                <div class="data-day">
+                    <i class='bx bx-map-pin'></i>
+                    <span>Paris, FR</span>
+                </div>
+            </div>
+
+            <div class="description-weather-today">
+                <i class='bx bx-sun'></i>
+                <p class="degrees">25 &deg;C</p>
+                <p class="day">Sunny</p>
+            </div>
+
+        </div>
+
+        <div class="right-card">
+
+            <div class="data-air">
+                <div class="data-air-elem">
+                        <span class="data-name">PRECIPITATION</span>
+                        <span class="data-value">4%</span>
+                </div>
+
+                <div class="data-air-elem">
+                    <span class="data-name">HUMIDITY</span>
+                    <span class="data-value">34%</span>
+                </div>
+
+                <div class="data-air-elem">
+                    <span class="data-name">WIND SPEED</span>
+                    <span class="data-value">6 km/h</span>
+                </div>
+            </div>
+
+            <ul class="weather-list">
+                <li class="list-elem">
+                    <i class='bx bx-cloud-lightning' ></i>
+                    <div>Sat</div>
+                    <div>23 &deg;C</div>
+                </li>
+                <li class="list-elem">
+                    <i class='bx bx-sun'></i>
+                    <div>Sun</div>
+                    <div>28 &deg;C</div>
+                </li>
+                <li class="list-elem">
+                    <i class='bx bx-cloud-light-rain'></i>
+                    <div>Mon</div>
+                    <div>2 &deg;C</div>
+                </li>
+                <li class="list-elem">
+                    <i class='bx bx-cloud'></i>
+                    <div>Tue</div>
+                    <div>14 &deg;C</div>
+                </li>
+            </ul>
+
+            <button class="location">Search location</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
